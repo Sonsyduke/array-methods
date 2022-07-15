@@ -44,3 +44,8 @@ const highestRatedMUMovie = marvelMovies.reduce(
 const newMovies = marvelMovies.filter((movie) => {
   return movie.year > 2020;
 });
+
+// MAP METHOD
+const namesOfMovie = marvelMovies.map((movie) => {
+  return movie.name;
+});
