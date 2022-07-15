@@ -30,6 +30,7 @@ const marvelMovies = [
   },
 ];
 
+// REDUCE METHOD
 const highestRatedMUMovie = marvelMovies.reduce(
   (highestRated, currentRated) => {
     if (currentRated.rating > highestRated.rating) {
@@ -38,3 +39,8 @@ const highestRatedMUMovie = marvelMovies.reduce(
     return highestRated;
   }
 );
+
+// FILTER METHOD
+const newMovies = marvelMovies.filter((movie) => {
+  return movie.year > 2020;
+});
